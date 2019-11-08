@@ -1,16 +1,24 @@
 <idea-plugin version="2">
   <id>com.codyi96.android.get.emoji</id>
   <name>Get Emoji</name>
-  <version>1.0</version>
+  <version>1.1</version>
   <vendor email="471705439@qq.com" url="https://codyi96.github.io/">codyi96</vendor>
 
   <description><![CDATA[
-      Enter emoji wherever.
+      <p>Enter emoji wherever.😀</p>
+      <h4>Usage</h4>
+      <p>
+          Press <mark>"⌃ + ⇧ + I"</mark>.
+      </p>
+	  <a href="https://github.com/codyi96/intellij-plugin-get-emoji/issues">issues</a> |
+	  <a href="https://github.com/codyi96/intellij-plugin-get-emoji">more</a>
     ]]></description>
 
   <change-notes><![CDATA[
-      <h3>v1.0</h3>
-      <li>Support for emoji version 12.0</li>
+      <h5>v1.1</h5>
+      <li>Change keyboard shortcuts</li>
+      <h5>v1.0</h5>
+      <li>Support for <a href="https://emojipedia.org/emoji-12.0/">emoji version 12.0</a></li>
     ]]>
   </change-notes>
 
@@ -31,7 +39,7 @@
     <!-- Add your actions here -->
     <action id="emoji" class="action.Emoji" text="😀Emoji" description="Enter emoji wherever">
       <add-to-group group-id="EditMenu" anchor="last"/>
-      <keyboard-shortcut keymap="$default" first-keystroke="E" second-keystroke="E"/>
+      <keyboard-shortcut keymap="$default" first-keystroke="control shift I"/>
     </action>
   </actions>
 
